@@ -1,0 +1,80 @@
+@use "../base/variables";
+
+.main { 
+display: grid;
+grid-template-columns: subgrid;
+grid-column: 1 / -1;
+grid-row: 3 /4;
+align-items:center;
+position: relative;
+
+
+
+&__line {
+    position: absolute;
+    top: -20%;
+    right: -5%;
+   
+}
+
+
+
+&__img {
+  
+    grid-column: 1 / 7;
+align-self: self-start;
+    
+}
+
+&__text {
+    grid-column: 8 / -1;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 3.5rem;
+}
+}
+
+
+@media (max-width: variables.$bp-1000) {
+    .main__line {
+     display: none;
+    }
+    
+  }
+
+  @media (max-width: variables.$bp-tablet) {
+    .main {
+    
+    &__img  {
+        grid-column: 1 / 6;
+     
+    }
+
+    &__text {
+        grid-column: 7 / -1;
+
+    }
+    
+}
+  }
+
+  @media (max-width: variables.$bp-mobile) { 
+
+
+    .main {
+
+        row-gap: 3.2rem;
+    
+        &__img  {
+            grid-column: 1 / -1;
+         
+        }
+    
+        &__text {
+            grid-column: 1 / -1;
+    
+        }
+        
+    }
+
+  }

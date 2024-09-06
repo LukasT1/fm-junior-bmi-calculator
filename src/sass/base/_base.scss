@@ -1,0 +1,43 @@
+@use "../base/variables";
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+.container { 
+  position: relative;
+  max-width: 144rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 3.2rem;
+  padding: 5rem 7rem;
+  row-gap: 7.5rem;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+@media (max-width: variables.$bp-tablet) {
+
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+   column-gap: 1rem;
+  }
+  
+}
+
+@media (max-width: variables.$bp-mobile) {  
+  .container {
+    padding: 2.5rem 3rem;
+  }
+}

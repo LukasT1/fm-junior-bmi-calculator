@@ -1,0 +1,132 @@
+@use "../base/variables";
+
+.limitations {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+    grid-row: 5/6;
+    row-gap: 3.2rem;
+
+&__text {
+    position: relative;
+    grid-column: 1 / 6;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 3.5rem;
+
+    &-line {
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+    &__card {
+        padding: 3.2rem;
+        grid-column: span 4;
+        display: flex;
+        flex-flow: column nowrap;
+        row-gap: 1.6rem;
+        box-shadow: var(--shadow);
+        border-radius: 1.6rem;
+
+
+        &-heading {
+            display: flex;
+            flex-direction: row;
+align-items: center;
+column-gap: 1.6rem;
+
+
+        }
+
+        &--1 {
+            grid-row: 1 / span 1;
+            grid-column: 8 / span 4;
+        }
+
+        &--2 {
+            grid-row: 2 / span 1;
+            grid-column: 5 / span 4;
+        }
+
+        &--3 {
+            grid-row: 2 / span 1;
+            grid-column: 9 / span 4;
+        }
+
+        &--4 {
+            grid-row: 3 / span 1;
+            grid-column: 3 / span 4;
+        }
+
+        &--5 {
+            grid-row: 3 /  span 1;
+            grid-column: 7 / span 4;
+        }
+
+        
+}
+
+}
+
+
+@media (max-width: variables.$bp-1000) {
+    .limitations__text-line {
+     display: none;
+    }
+    
+  }
+
+  @media (max-width: variables.$bp-tablet) { 
+
+
+    .limitations {
+        
+
+        &__text {
+            grid-column: 1 /-1;
+            text-align: center;
+        }
+
+        &__card {
+            grid-column: span 6;
+
+            &--1, &--2, &--3, &--4 {
+                grid-row: auto;
+                grid-column: span 6;
+            }
+
+            &--5 {
+                grid-column: 4 / span 6;
+                grid-row: 4;
+            }
+        }
+
+
+    }
+  }
+
+
+  @media (max-width: variables.$bp-mobile) {   
+
+    .limitations {
+        
+
+        &__text {
+            grid-column: 1 /-1;
+            text-align: center;
+        }
+
+        &__card {
+            grid-column: span 12;
+
+            &--1, &--2, &--3, &--4, &--5 {
+                grid-row: auto;
+            
+            }
+
+        }
+  }
+}
