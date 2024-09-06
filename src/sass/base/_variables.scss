@@ -1,17 +1,16 @@
 :root {
- --blue: #345ff6;
- --blue-15: rgba($color:#345ff6, $alpha: 0.15);
+  --blue: #345ff6;
+  --blue-15: rgba($color: #345ff6, $alpha: 0.15);
   --gunnmetal: #253347;
- --dark-blue: #5E6E85;
- --dark-blue-25: rgba($color: #5E6E85, $alpha: 0.25);
- --white: #fff;
+  --dark-blue: #5e6e85;
+  --dark-blue-25: rgba($color: #5e6e85, $alpha: 0.25);
+  --white: #fff;
 
-
- --shadow: 1.6rem 3.2rem 5.2rem rgba(94, 110, 133, 0.25);
+  --shadow: 1.6rem 3.2rem 5.2rem rgba(94, 110, 133, 0.25);
 }
 
 //BREAKPOINTS
 
 $bp-1000: 62.5em; //1000px
 $bp-tablet: 56.25em; // 900px
-$bp-mobile: 34.375em // 550px
+$bp-mobile: 34.375em; // 550px
