@@ -499,6 +499,7 @@ html {
 .form__input-metric-label {
   grid-row: 1/2;
   margin-bottom: 0.5rem;
+  justify-self: start;
 }
 .form__input-text {
   width: 100%;
@@ -511,6 +512,7 @@ html {
 .form__input-imperial-label {
   grid-column: 1/-1;
   margin-bottom: 0.5rem;
+  justify-self: start;
 }
 .form__input-imperial-label:last-of-type {
   margin-top: 2.4rem;
@@ -544,6 +546,11 @@ input[type=text] {
   border-radius: 1.2rem;
 }
 
+@media (max-width: 34.375em) {
+  .form__result {
+    border-radius: 16px;
+  }
+}
 .nav {
   grid-column: 1/-1;
   justify-self: start;

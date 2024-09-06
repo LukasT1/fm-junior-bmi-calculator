@@ -1,3 +1,5 @@
+@use '../base/variables';
+
 .form {
   background-color: var(--white);
   border-radius: 1.6rem;
@@ -53,6 +55,7 @@
       &-label {
         grid-row: 1 / 2;
         margin-bottom: 0.5rem;
+        justify-self: start;
       }
     }
 
@@ -68,7 +71,7 @@
       &-label {
         grid-column: 1 / -1;
         margin-bottom: 0.5rem;
-
+        justify-self: start;
         &:last-of-type {
           margin-top: 2.4rem;
         }
@@ -115,4 +118,12 @@ input[type='text'] {
   padding: 2rem 2.4rem;
   border: 1px solid var(--dark-blue);
   border-radius: 1.2rem;
+}
+
+@media (max-width: variables.$bp-mobile) {
+  .form {
+    &__result {
+      border-radius: 16px;
+    }
+  }
 }
