@@ -42,111 +42,151 @@
               Enter your details below
             </h3>
             <div class="form__radio-group">
-              <input
-                type="radio"
-                class="form__radio-btn"
-                name="metric"
-                id="metric" />
-              <label for="metric" class="form__radio-label body-m--bold"
-                >Metric</label
-              >
-            </div>
-            <div class="form__radio-group">
-              <input
-                type="radio"
-                class="form__radio-btn"
-                name="metric"
-                id="imperial" />
-              <label for="imperial" class="form__radio-label body-m--bold"
-                >Imperial</label
-              >
-            </div>
-            <div class="form__input-metric hidden">
-              <label
-                for="height-metric"
-                class="form__input-metric-label body-s dark-blue"
-                >Height</label
-              >
-              <div class="form__input-wrapper">
+              <div class="form__radio-group-metric">
                 <input
-                  type="text"
-                  placeholder="0"
-                  class="form__input-text heading-m"
-                  name="height-metric"
-                  id="height-metric" />
-                <span class="form__input-unit heading-m blue">cm</span>
+                  type="radio"
+                  class="form__radio-btn"
+                  name="metric"
+                  id="metric"
+                  checked />
+                <label for="metric" class="form__radio-label body-m--bold"
+                  >Metric</label
+                >
               </div>
-              <label
-                for="weight-metric"
-                class="form__input-metric-label body-s dark-blue"
-                >Weight</label
-              >
-              <div class="form__input-wrapper">
+
+              <div class="form__radio-group-imperial">
                 <input
-                  type="text"
-                  placeholder="0"
-                  class="form__input-text heading-m"
-                  name="weight-metric"
-                  id="weight-metric" />
-                <span class="form__input-unit heading-m blue">kg</span>
+                  type="radio"
+                  class="form__radio-btn"
+                  name="metric"
+                  id="imperial" />
+                <label
+                  for="imperial"
+                  class="form__radio-label body-m--bold"
+                  >Imperial</label
+                >
+              </div>
+            </div>
+            <div class="form__input">
+              <div class="form__input-metric">
+                <label
+                  for="height-metric"
+                  class="form__input-metric-label body-s dark-blue"
+                  >Height</label
+                >
+                <div class="form__input-wrapper">
+                  <input
+                    type="number"
+                    min="10"
+                    max="300"
+                    value=""
+                    placeholder="0"
+                    class="form__input-text heading-m"
+                    name="height-metric"
+                    id="heightCm" />
+                  <span class="form__input-unit heading-m blue">cm</span>
+                </div>
+                <label
+                  for="weight-metric"
+                  class="form__input-metric-label body-s dark-blue"
+                  >Weight</label
+                >
+                <div class="form__input-wrapper">
+                  <input
+                    type="number"
+                    min="0"
+                    max="600"
+                    placeholder="0"
+                    class="form__input-text heading-m"
+                    name="weight-metric"
+                    id="weightKg" />
+                  <span class="form__input-unit heading-m blue">kg</span>
+                </div>
+              </div>
+              <div class="form__input-imperial hidden">
+                <label
+                  for="height-imperial"
+                  class="form__input-imperial-label body-s dark-blue"
+                  >Height</label
+                >
+                <div class="form__input-wrapper">
+                  <input
+                    type="number"
+                    min="0"
+                    max="10"
+                    placeholder="0"
+                    class="form__input-text heading-m"
+                    name="height-feets"
+                    id="heightFt" />
+                  <span class="form__input-unit heading-m blue">ft</span>
+                </div>
+                <div class="form__input-wrapper">
+                  <input
+                    type="number"
+                    min="0"
+                    max="20"
+                    placeholder="0"
+                    class="form__input-text heading-m"
+                    name="height-inches"
+                    id="heightIn" />
+                  <span class="form__input-unit heading-m blue">in</span>
+                </div>
+                <label
+                  for="weight-imperial"
+                  class="form__input-imperial-label body-s dark-blue"
+                  >Weight</label
+                >
+                <div class="form__input-wrapper">
+                  <input
+                    type="number"
+                    min="0"
+                    max="100"
+                    placeholder="0"
+                    class="form__input-text heading-m"
+                    name="weight-stones"
+                    id="weightSt" />
+                  <span class="form__input-unit heading-m blue">st</span>
+                </div>
+                <div class="form__input-wrapper">
+                  <input
+                    type="number"
+                    min="0"
+                    max="500"
+                    placeholder="0"
+                    class="form__input-text heading-m"
+                    name="weight-lbs"
+                    id="weightLbs" />
+                  <span class="form__input-unit heading-m blue">lbs</span>
+                </div>
               </div>
             </div>
 
-            <div class="form__input-imperial">
-              <label
-                for="height-imperial"
-                class="form__input-imperial-label body-s dark-blue"
-                >Height</label
-              >
-              <div class="form__input-wrapper">
-                <input
-                  type="text"
-                  placeholder="0"
-                  class="form__input-text heading-m"
-                  name="height-feets"
-                  id="height-feets" />
-                <span class="form__input-unit heading-m blue">ft</span>
+            <div class="form__box">
+              <div class="form__box-welcome hidden">
+                <h3 class="heading-m white">Welcome!</h3>
+                <p class="body-m white">
+                  Enter your height and weight and you'll see your BMI
+                  result here
+                </p>
               </div>
-              <div class="form__input-wrapper">
-                <input
-                  type="text"
-                  placeholder="0"
-                  class="form__input-text heading-m"
-                  name="height-inches"
-                  id="height-inches" />
-                <span class="form__input-unit heading-m blue">in</span>
-              </div>
-              <label
-                for="weight-imperial"
-                class="form__input-imperial-label body-s dark-blue"
-                >Weight</label
-              >
-              <div class="form__input-wrapper">
-                <input
-                  type="text"
-                  placeholder="0"
-                  class="form__input-text heading-m"
-                  name="weight-stones"
-                  id="weight-stones" />
-                <span class="form__input-unit heading-m blue">st</span>
-              </div>
-              <div class="form__input-wrapper">
-                <input
-                  type="text"
-                  placeholder="0"
-                  class="form__input-text heading-m"
-                  name="weight-lbs"
-                  id="weight-lbs" />
-                <span class="form__input-unit heading-m blue">lbs</span>
-              </div>
-            </div>
 
-            <div class="form__result">
-              <h3 class="heading-m white">Welcome!</h3>
-              <p class="body-m white">
-                Enter your height and weight and you'll see your BMI result
-                here
-              </p>
+              <div class="form__box-result">
+                <p class="form__box-result-sub body-m white">
+                  Your BMI is...
+                </p>
+                <h2 class="form__box-result-heading heading-xl white">
+                  23.2
+                </h2>
+                <p class="form__box-result-text body-s white">
+                  Your BMI suggests you’re a
+                  <span class="form__box-result-span-text"
+                    >healthy weight</span
+                  >. Your ideal weight is between
+                  <span class="form__box-result-span-weight body-m--bold"
+                    >63.3kgs - 85.2kgs</span
+                  >
+                </p>
+              </div>
             </div>
           </form>
         </header>
@@ -310,5 +350,6 @@
         </article>
       </section>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

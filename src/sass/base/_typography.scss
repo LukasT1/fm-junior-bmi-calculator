@@ -1,66 +1,83 @@
-@use "variables";
+@use 'variables';
 
 body {
-    font-family: "Inter", sans-serif;
-    color: var(--gunnmetal);
-
+  font-family: 'Inter', sans-serif;
+  color: var(--gunnmetal);
 }
 
-h1,h2, h3, h4, h5 {
-line-height: 110%;
-font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 110%;
+  font-weight: 600;
 }
 
 p {
-    line-height: 150%;
-    font-weight: 400;
+  line-height: 150%;
+  font-weight: 400;
 }
 
 .heading-xl {
-font-size: 6.4rem;
-font-weight: 600;
+  font-size: 6.4rem;
+  font-weight: 600;
 }
 
 .heading-l {
-    font-size: 4.8rem;
-    font-weight: 600;
+  font-size: 4.8rem;
+  font-weight: 600;
 }
 
 .heading-m {
-    font-size: 2.4rem;
-    font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 600;
 }
 
 .heading-s {
-    font-size: 2rem;
-    font-weight: 600;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .body-m {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
+  @media (max-width: variables.$bp-tablet) {
+    font-size: 1.8rem;
+  }
 }
 
 .body-m--bold {
-    font-size: 1.6rem;
-    font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 600;
+  @media (max-width: variables.$bp-tablet) {
+    font-size: 1.8rem;
+  }
 }
 
 .body-s {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
+
+  @media (max-width: variables.$bp-tablet) {
+    font-size: 1.6rem;
+  }
 }
 
 .white {
-    color: var(--white);
+  color: var(--white);
 }
 
 .blue {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 .dark-blue {
-    color: var(--dark-blue);
+  color: var(--dark-blue);
 }
 
 .gunmetal {
-    color: var(--gunnmetal);
+  color: var(--gunnmetal);
+}
+
+.bold {
+  font-weight: 600;
 }
