@@ -83,7 +83,8 @@
                     placeholder="0"
                     class="form__input-text heading-m"
                     name="height-metric"
-                    id="heightCm" />
+                    id="heightCm"
+                    data-unit="metric" />
                   <span class="form__input-unit heading-m blue">cm</span>
                 </div>
                 <label
@@ -99,7 +100,8 @@
                     placeholder="0"
                     class="form__input-text heading-m"
                     name="weight-metric"
-                    id="weightKg" />
+                    id="weightKg"
+                    data-unit="metric" />
                   <span class="form__input-unit heading-m blue">kg</span>
                 </div>
               </div>
@@ -117,7 +119,8 @@
                     placeholder="0"
                     class="form__input-text heading-m"
                     name="height-feets"
-                    id="heightFt" />
+                    id="heightFt"
+                    data-unit="imperial" />
                   <span class="form__input-unit heading-m blue">ft</span>
                 </div>
                 <div class="form__input-wrapper">
@@ -128,7 +131,8 @@
                     placeholder="0"
                     class="form__input-text heading-m"
                     name="height-inches"
-                    id="heightIn" />
+                    id="heightIn"
+                    data-unit="imperial" />
                   <span class="form__input-unit heading-m blue">in</span>
                 </div>
                 <label
@@ -144,7 +148,8 @@
                     placeholder="0"
                     class="form__input-text heading-m"
                     name="weight-stones"
-                    id="weightSt" />
+                    id="weightSt"
+                    data-unit="imperial" />
                   <span class="form__input-unit heading-m blue">st</span>
                 </div>
                 <div class="form__input-wrapper">
@@ -155,14 +160,15 @@
                     placeholder="0"
                     class="form__input-text heading-m"
                     name="weight-lbs"
-                    id="weightLbs" />
+                    id="weightLbs"
+                    data-unit="imperial" />
                   <span class="form__input-unit heading-m blue">lbs</span>
                 </div>
               </div>
             </div>
 
             <div class="form__box">
-              <div class="form__box-welcome hidden">
+              <div class="form__box-welcome">
                 <h3 class="heading-m white">Welcome!</h3>
                 <p class="body-m white">
                   Enter your height and weight and you'll see your BMI
@@ -170,7 +176,7 @@
                 </p>
               </div>
 
-              <div class="form__box-result">
+              <div class="form__box-result hidden">
                 <p class="form__box-result-sub body-m white">
                   Your BMI is...
                 </p>

@@ -51,6 +51,7 @@
   }
   .bg__wrapper {
     &::before {
+      background: linear-gradient(90deg, transparent -40%, #d6e6fe 200%);
       width: 110%;
       height: 85%;
       left: 50%;

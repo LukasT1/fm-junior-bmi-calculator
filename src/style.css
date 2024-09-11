@@ -472,7 +472,7 @@ html {
 }
 @media (max-width: 34.375em) {
   .container {
-    padding: 2.5rem 3rem;
+    padding: 2.5rem 2rem;
   }
 }
 .form {
@@ -620,6 +620,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 /* For Firefox */
 input[type=number] {
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 
@@ -675,6 +676,7 @@ input[type=number] {
     justify-self: center;
   }
   .bg__wrapper::before {
+    background: linear-gradient(90deg, transparent -40%, #d6e6fe 200%);
     width: 110%;
     height: 85%;
     left: 50%;
