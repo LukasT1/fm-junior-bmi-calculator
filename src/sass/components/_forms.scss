@@ -11,6 +11,22 @@
   // max-width: 56rem;
   box-shadow: var(--shadow);
 
+  &__heading {
+    grid-column: 1/ -1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-icon {
+      font-size: 3.5rem;
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
+
   &__radio {
     &-group {
       grid-column: 1 / -1;
@@ -32,11 +48,6 @@
         gap: 1.8rem;
       }
     }
-  }
-
-  &__heading {
-    grid-column: 1 / -1;
-    text-align: start;
   }
 
   &__input {

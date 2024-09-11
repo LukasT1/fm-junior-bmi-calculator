@@ -38,9 +38,12 @@
           </p>
 
           <form action="" class="header__form form">
-            <h3 class="form__heading heading-m">
-              Enter your details below
-            </h3>
+            <div class="form__heading">
+              <h3 class="form__heading-header heading-m">
+                Enter your details below
+              </h3>
+              <p class="form__heading-icon">&#8634;</p>
+            </div>
             <div class="form__radio-group">
               <div class="form__radio-group-metric">
                 <input
@@ -101,7 +104,8 @@
                     class="form__input-text heading-m"
                     name="weight-metric"
                     id="weightKg"
-                    data-unit="metric" />
+                    data-unit="metric"
+                    step="0.1" />
                   <span class="form__input-unit heading-m blue">kg</span>
                 </div>
               </div>
